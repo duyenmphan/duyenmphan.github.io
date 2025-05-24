@@ -1,23 +1,23 @@
-const logotext = "Seonghee Lee";
+const logotext = "Phan My Duyen";
 const meta = {
-    title: "Seonghee Lee",
-    description: "I'm Seonghee Lee a Master's student at Stanford studying Computer Science.",
+    title: "Phan My Duyen",
+    description: "I'm Phan My Duyen a senior student at University of Social Science and Humanities - Vietnam National University Ho Chi Minh City studying Anthropology.",
 };
 
 const introdata = {
-    title: "Seonghee Lee",
+    title: "Phan My Duyen",
     animated: {
-        first: "Human AI Interaction",
-        second: "Applied Machine Learning",
+        first: "",
+        second: "",
     },
-    description: "In the past, I was a Research Assistant at the KAIST Interaction Lab (KIXLAB) developing a Generative Agent for Programming Education. My research interests are at the intersection of Human-AI Interaction and applied Machine Learning." ,
-    description_two:"  I am currently a first year Computer Science (MS) student at Stanford and I did my undergrad at Cornell studying Information Science. I have received grants and scholarships for my research like the Robert S Ann Morley Research Grant and the Gwanjeong Scholarship for my Master's Studies.",
+    description: "In the past, " ,
+    // description_two:"  I am currently a first year Computer Science (MS) student at Stanford and I did my undergrad at Cornell studying Information Science. I have received grants and scholarships for my research like the Robert S Ann Morley Research Grant and the Gwanjeong Scholarship for my Master's Studies.",
     your_img_url: "",
 };
 
 const dataabout = {
     title: "Research Interests",
-    aboutme: "My research is primarily focused on the development of AI tools for communities, specifically exploring the implementation of LLM agents with model-level interactions or user-centered evaluations. I aim to create tools that embrace social consciousness, beyond considerations of model precision and performance.",
+    aboutme: "My research is primarily focused on ",
 };
 const worktimeline = [{
         jobtitle: "Stanford University",
@@ -122,7 +122,7 @@ const dataportfolio = [
     {
         img: "altCanvas",
         title: "AltCanvas: A Tile-Based Image Editor with Generative AI for Blind or Visually Impaired People",
-        authors: "Seonghee Lee, Maho Kohga, Steve Landau, Sile O'Modhrain, Hari Subramonyam",
+        authors: "Phan My Duyen, Maho Kohga, Steve Landau, Sile O'Modhrain, Hari Subramonyam",
         conference: "ACM SIGACCESS Conference on Computers and Accessibility, ASSETS 2024",
         doi:"https://doi.org/10.48550/arXiv.2408.10240",
         video:"https://www.youtube.com/watch?v=tJUqjjwSxPs",
@@ -132,7 +132,7 @@ const dataportfolio = [
     {
         img: "cs224s",
         title: "Beyond Scale: Analyzing ASR Model Performance in Code-Switching Data",
-        authors: "Seonghee Lee, Yiling Zhao, Michela Marchini",
+        authors: "Phan My Duyen, Yiling Zhao, Michela Marchini",
         conference: "CS 224S Speech Language Processing (A+)",
         doi:"https://drive.google.com/file/d/1iVEVgdgw4sbKr1InlFf43_tFV8i-9Oi0/view",
     }
@@ -140,7 +140,7 @@ const dataportfolio = [
     {
         img: "teachyou",
         title: "Teach AI How to Code: Using Large Language Models as Teachable Agents for Programming Education",
-        authors: "Hyoungwook Jin, Seonghee Lee, Hyungyu Shin, Juho Kim",
+        authors: "Hyoungwook Jin, Phan My Duyen, Hyungyu Shin, Juho Kim",
         conference: "2024 19th ACM/IEEE International Conference on Human-Computer Interaction (CHI)",
         doi:"https://doi.org/10.1145/3613904.3642349",
         video:"https://www.youtube.com/watch?v=MEtcA6GjfAg",
@@ -193,16 +193,7 @@ const projectportfolio = [
         description: "A Gestural Interaction for Passenger Interaction in Autonomous Vehicles",
         paper: "https://yw6524.wixsite.com/carat",
     },
-    // {
-    //     title: "Algorithmic Awareness on Youtube",
-    //     description: "User Prototying to Explore User Awareness of Youtube Recommendations",
-    //     paper: "http://127.0.0.1:4000/assets/youtube.pdf",
-    // },
-    // {
-    //     title: "Remote Interaction with Embodied EyeTracking Robot",
-    //     description: "We present an open-source, low cost telepresence robot that moves according to a remote user’s head movements and has a display that can be used to display a video of the remote user.",
-    //     paper: "https://drive.google.com/file/d/19x9CiQBZJfIglFcGmhnYhgXXs3ZLQPIj/view",
-    // },
+
 ];
 
 const contactConfig = {
