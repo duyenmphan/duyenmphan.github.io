@@ -25,7 +25,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.' # If your index.html is in a folder, change this to './folder-name'
+          path: './public' # If your index.html is in a folder, change this to './folder-name'
 
       - name: Deploy to GitHub Pages
         id: deployment
