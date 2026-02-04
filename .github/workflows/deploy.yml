@@ -1,28 +1,24 @@
-name: Deploy to GitHub Pages
+name: Deploy to GH Pages Branch
 
 on:
   push:
-    branches: ["main"]
+    branches: [main]
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 
 jobs:
   deploy:
-    environment:
-      name: github-pages
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          path: './public' # It will look for the public folder ON THE MAIN BRANCH
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          # This tells the action to take the contents of public/ 
+          # and move them to the ROOT of the github-pages branch.
+          publish_dir: ./public 
+          publish_branch: github-pages
