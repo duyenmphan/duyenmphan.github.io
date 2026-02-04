@@ -13,19 +13,15 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './public' # If your index.html is in a folder, change this to './folder-name'
+          path: './public' # It will look for the public folder ON THE MAIN BRANCH
 
       - name: Deploy to GitHub Pages
         id: deployment
