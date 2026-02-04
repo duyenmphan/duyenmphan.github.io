@@ -1,25 +1,32 @@
-name: Deploy Personal Page
+name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [main] # Trigger when you push code to main
+    branches: ["main"]
 
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
-  build-and-deploy:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # IF YOU HAVE A BUILD STEP (like npm run build), ADD IT HERE.
-      # If it's just plain HTML, skip this part.
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
 
-      - name: Deploy to Main Branch
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./ # If your html is in a folder like 'dist', change to ./dist
-          publish_branch: main # CRITICAL: User pages must deploy to main
+          path: '.' # If your index.html is in a folder, change this to './folder-name'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
