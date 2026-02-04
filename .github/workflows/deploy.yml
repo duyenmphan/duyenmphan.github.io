@@ -17,4 +17,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./ # Change to ./dist or ./build if you have a build step
-          publish_branch: github-pages # This 'auto generates' the branch
+          publish_branch: gh-pages # This 'auto generates' the branch
