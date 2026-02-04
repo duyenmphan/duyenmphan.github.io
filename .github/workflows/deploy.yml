@@ -8,9 +8,11 @@ permissions:
   contents: read
   pages: write
   id-token: write
-
 jobs:
   deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -22,7 +24,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.' # Change this to './dist' if you use a build framework
+          path: '.' 
 
       - name: Deploy to GitHub Pages
         id: deployment
