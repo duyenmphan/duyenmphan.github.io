@@ -47,16 +47,9 @@ export const Home = () => {
                 </h6> 
                 */}
 
-                <p style={{fontSize:"small"}}>You can clone and use this website from <a href="https://github.com/shljessie/shljessie.github.io" target="_blank">my GitHub</a></p>
 
                 <br/>
-                <p className="mb-1x"> Hello! :) I'm Seonghee, a second-year <b>Computer Science (MS) student @Stanford University</b>. <br></br>
-                I am advised by <a href=""><b>Professor Diyi Yang</b></a> (Stanford NLP) and <a href="https://haridecoded.com/"><b>Professor Hari Subramonyam</b></a> (Stanford HCI).<br></br> 
-                I have also worked at <b>Microsoft Research</b> on Multimodal Agent Interaction in Open Spaces—Project Transcendence (HCAIX)
-                under the guidance of Kori Inkpen, John Tang, Asta Roseway, and Sasa Junuzovic. <br></br><br></br>
-                I have experience in machine learning, particularly in fine-tuning and training large-scale vision and language models,
-                web development, backend infrastructure, and programming. <br></br>
-                I really like gitHub's design, Apple's WWDC conferences, and learning more about developing accessible technology.</p>
+                <p className="mb-1x"> Hello! :) I'm My Duyen Phan, Bachelor of HCM
                 <div className="intro_btn-action pb-5">
                   <a href="https://drive.google.com/file/d/1R3HEipS15I9qAyvodmtpF8BQYJRvdOoJ/view?usp=sharing">                  
                     <div id="button_h" className="ac_btn btn">
