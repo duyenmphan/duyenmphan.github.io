@@ -1,20 +1,25 @@
-name: Deploy to GitHub Pages
+name: Deploy Personal Page
 
 on:
   push:
-    branches: [main]
+    branches: [main] # Trigger when you push code to main
+
+permissions:
+  contents: write
 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      
-      # Add your build steps here if needed (e.g., npm install && npm run build)
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      - name: Deploy
+      # IF YOU HAVE A BUILD STEP (like npm run build), ADD IT HERE.
+      # If it's just plain HTML, skip this part.
+
+      - name: Deploy to Main Branch
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site # Change to ./dist or ./build if you have a build step
-          publish_branch: gh-pages # This 'auto generates' the branch
+          publish_dir: ./ # If your html is in a folder like 'dist', change to ./dist
+          publish_branch: main # CRITICAL: User pages must deploy to main
